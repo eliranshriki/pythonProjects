@@ -18,7 +18,7 @@ for num in range(1,nr_numbers+1):
     num=random.choice(numbers)
     password.append(num)
 random.shuffle(password)
-print ("".join(password))
+print (f'your password is: {"".join(password)}')
 
 
 #foo = ['a', 'b', 'c', 'd', 'e']
