@@ -8,7 +8,6 @@ word_length = len(chosen_word)
 lives = len(hangman_art.stages)
 display = []
 print(hangman_art.logo)
-#print(chosen_word)
 
 for _ in range(word_length):
     display += "_"
@@ -29,9 +28,9 @@ while not end_of_game:
         wrong_guess_list.append(guess)
     elif guess in wrong_guess_list:
         print(f"you alrady try the letter {guess.upper()}")
-        if lives == 0:
-            end_of_game = True
-            print("you loose")
+    if lives == 0:
+        end_of_game = True
+        print("you loose")
 
 
     print(f"{' '.join(display)}")
